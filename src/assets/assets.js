@@ -189,7 +189,8 @@ export const roomsDummyData = [
         "createdAt": "2025-04-10T06:23:20.252Z",
         "updatedAt": "2025-04-10T06:23:20.252Z",
         "__v": 0
-    }
+    },
+    
 ]
 
 
