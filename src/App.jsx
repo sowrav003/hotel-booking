@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import Home from "./components/Home"
 import Footer from "./components/Footer"
 import Rooms from "./pages/Rooms"
+import RoomDetails from "./pages/RoomDetails"
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/hotels" element={<Rooms />} />
+            <Route path="/hotels/:id" element={<RoomDetails />} />
         </Routes>
       </div>
       <Footer />
