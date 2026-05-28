@@ -1,19 +1,21 @@
 import { useNavigate } from "react-router-dom";
 import { roomsDummyData } from "../assets/assets";
-import HotelCard from "../pages/HotelCard";
+import HotelCard from "./HotelCard";
 import Title from "./Title";
 
 const FeaturesCard = () => {
     const navigate = useNavigate();
   return (
-    <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-50 py-20">
+    <div className="flex flex-col items-center px-6 md:px-16 lg:px-24 bg-slate-900 py-20">
       <Title
         title="Featured Destinations"
         subTitle="Explore our handpicked selection of top destinations for your next getaway."
         align="center"
+        text="text-white"
+        paraText="text-gray-300"
       />
       <div className="flex flex-wrap items-center justify-center gap-6 mt-20">
-        {roomsDummyData.slice(0, 6).map((room, index) => (
+        {roomsDummyData.slice(0, 5).map((room, index) => (
           <HotelCard key={room._id} room={room} index={index} />
         ))}
       </div>

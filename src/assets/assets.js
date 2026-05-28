@@ -37,6 +37,19 @@ import listIcon from "./listIcon.svg";
 import uploadArea from "./uploadArea.svg";
 import totalBookingIcon from "./totalBookingIcon.svg";
 import totalRevenueIcon from "./totalRevenueIcon.svg";
+import luxuryRoomImg from "./luxury-room.jpg";
+import hotelInteriorImg from "./hotel-interior.jpg";
+import featureBg from "./feature-bg.jpg";
+import natural from "./natural.png";
+import home from "./home.png";
+import family from "./family.png";
+import dinner from "./dinner.png";
+import contact from "./contact.jpg";
+import mailIcon from "./mail.png";
+import mapIcon from "./map.png";
+import phoneIcon from "./phone.png";
+import mapImg from "./mapImg.png";
+import hotelLobby from "./hotel-lobby.jpg";
 
 
 export const assets = {
@@ -72,6 +85,19 @@ export const assets = {
     uploadArea,
     totalBookingIcon,
     totalRevenueIcon,
+    luxuryRoomImg,
+    hotelInteriorImg,
+    hotelLobby,
+    featureBg,
+    natural,
+    home,
+    family,
+    dinner,
+    contact,
+    mapIcon,
+    phoneIcon,
+    mailIcon,
+    mapImg,
 }
 
 export const cities = [
@@ -190,6 +216,103 @@ export const roomsDummyData = [
         "updatedAt": "2025-04-10T06:23:20.252Z",
         "__v": 0
     },
+    {
+        "_id": "67f7647c197ac559e4089b96",
+        "hotel": hotelDummyData,
+        "roomType": "Double Bed",
+        "pricePerNight": 399,
+        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "images": [roomImg1, roomImg2, roomImg3, roomImg4],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:26:04.013Z",
+        "updatedAt": "2025-04-10T06:26:04.013Z",
+        "__v": 0
+    },
+    {
+        "_id": "67f76452197ac559e4089b8e",
+        "hotel": hotelDummyData,
+        "roomType": "Double Bed",
+        "pricePerNight": 299,
+        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "images": [roomImg2, roomImg3, roomImg4, roomImg1],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:25:22.593Z",
+        "updatedAt": "2025-04-10T06:25:22.593Z",
+        "__v": 0
+    },
+    {
+        "_id": "67f76406197ac559e4089b82",
+        "hotel": hotelDummyData,
+        "roomType": "Double Bed",
+        "pricePerNight": 249,
+        "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
+        "images": [roomImg3, roomImg4, roomImg1, roomImg2],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:24:06.285Z",
+        "updatedAt": "2025-04-10T06:24:06.285Z",
+        "__v": 0
+    },
+    {
+        "_id": "67f763d8197ac559e4089b7a",
+        "hotel": hotelDummyData,
+        "roomType": "Single Bed",
+        "pricePerNight": 199,
+        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
+        "images": [roomImg4, roomImg1, roomImg2, roomImg3],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:23:20.252Z",
+        "updatedAt": "2025-04-10T06:23:20.252Z",
+        "__v": 0
+    },
+    {
+        "_id": "67f7647c197ac559e4089b96",
+        "hotel": hotelDummyData,
+        "roomType": "Double Bed",
+        "pricePerNight": 399,
+        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "images": [roomImg1, roomImg2, roomImg3, roomImg4],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:26:04.013Z",
+        "updatedAt": "2025-04-10T06:26:04.013Z",
+        "__v": 0
+    },
+    {
+        "_id": "67f76452197ac559e4089b8e",
+        "hotel": hotelDummyData,
+        "roomType": "Double Bed",
+        "pricePerNight": 299,
+        "amenities": ["Room Service", "Mountain View", "Pool Access"],
+        "images": [roomImg2, roomImg3, roomImg4, roomImg1],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:25:22.593Z",
+        "updatedAt": "2025-04-10T06:25:22.593Z",
+        "__v": 0
+    },
+    {
+        "_id": "67f76406197ac559e4089b82",
+        "hotel": hotelDummyData,
+        "roomType": "Double Bed",
+        "pricePerNight": 249,
+        "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
+        "images": [roomImg3, roomImg4, roomImg1, roomImg2],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:24:06.285Z",
+        "updatedAt": "2025-04-10T06:24:06.285Z",
+        "__v": 0
+    },
+    {
+        "_id": "67f763d8197ac559e4089b7a",
+        "hotel": hotelDummyData,
+        "roomType": "Single Bed",
+        "pricePerNight": 199,
+        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
+        "images": [roomImg4, roomImg1, roomImg2, roomImg3],
+        "isAvailable": true,
+        "createdAt": "2025-04-10T06:23:20.252Z",
+        "updatedAt": "2025-04-10T06:23:20.252Z",
+        "__v": 0
+    },
+    
     
 ]
 

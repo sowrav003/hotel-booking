@@ -32,10 +32,6 @@ const RadioButton = ({ label, selected = false, onChange = () => {} }) => {
 const Rooms = () => {
   const navigate = useNavigate();
   const [openFilters, setOpenFilters] = useState(false);
-  // const [selectedRoomTypes, setSelectedRoomTypes] = useState([])
-  // const [price, setPrice] = useState([])
-  // const [sortBy, setSortBy] = useState("")
-
   const [selectedRoomTypes, setSelectedRoomTypes] = useState([]);
   const [selectedPrice, setSelectedPrice] = useState([]);
   const [selectedSort, setSelectedSort] = useState("");
@@ -124,7 +120,7 @@ const Rooms = () => {
     setSelectedSort("");
   };
   return (
-    <div className="flex flex-col-reverse lg:flex-row items-start justify-between pt-28 md:pt-35 px-4 md:px-16 lg:px-24 xl:px-32">
+    <div className="flex flex-col-reverse lg:flex-row items-start justify-between pt-28 md:pt-35 px-4 md:px-16 lg:px-24 xl:px-32 ">
       <div className="w-full lg:w-1/2 flex flex-col gap-8">
         <div className="flex flex-col items-start text-left">
           <h1 className="font-playfair text-4xl md:text-[40px]">
@@ -243,6 +239,7 @@ const Rooms = () => {
               />
             ))}
           </div>
+          
         </div>
       </div>
     </div>

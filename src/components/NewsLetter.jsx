@@ -7,6 +7,8 @@ const NewsLetter = () => {
       <Title
         title="Instant Updates, Exclusive Offers"
         subTitle="Get the latest updates and offers directly in your inbox."
+        text="text-white"
+        paraText="text-gray-500"
       />
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 mt-6">
         <input

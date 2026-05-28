@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { assets } from '../assets/assets';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useClerk, useUser , UserButton } from '@clerk/react';
@@ -14,8 +14,8 @@ const Navbar = () => {
     const navLinks = [
         { name: 'Home', path: '/' },
         { name: 'Hotels', path: '/hotels' },
-        { name: 'Experience', path: '/experience' },
         { name: 'About', path: '/about' },
+        { name: 'Contact', path: '/contact' },
     ];
 
 
@@ -74,7 +74,9 @@ const Navbar = () => {
                             </UserButton.MenuItems>
                         </UserButton>
                     ) : (
-                        <button onClick={openSignIn} className="px-8 py-2.5 rounded-full ml-4 transition-all duration-500 bg-black text-white">
+                        <button onClick={openSignIn} className="px-8 py-2.5 rounded-full ml-4 transition-all duration-500 
+            bg-[#b59567]
+            hover:bg-[#9d8056] text-white">
                             Login
                         </button>
                     )}
@@ -109,7 +111,9 @@ const Navbar = () => {
                         </Link>
                     ))}  
 
-                        { !user && <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
+                        { !user && <button onClick={openSignIn} className="
+            bg-[#b59567]
+            hover:bg-[#9d8056] text-white px-8 py-2.5 rounded-full transition-all duration-500">
                             Login
                         </button>}
                 </div>
