@@ -48,6 +48,7 @@ import contact from "./contact.jpg";
 import mailIcon from "./mail.png";
 import mapIcon from "./map.png";
 import phoneIcon from "./phone.png";
+import messageIcon from "./messageIcon.png";
 import mapImg from "./mapImg.png";
 import hotelLobby from "./hotel-lobby.jpg";
 
@@ -96,6 +97,7 @@ export const assets = {
     contact,
     mapIcon,
     phoneIcon,
+    messageIcon,
     mailIcon,
     mapImg,
 }
@@ -169,7 +171,7 @@ export const hotelDummyData = {
 // Rooms Dummy Data
 export const roomsDummyData = [
     {
-        "_id": "67f7647c197ac559e4089b96",
+        "id": "1",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 399,
@@ -181,7 +183,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76452197ac559e4089b8e",
+        "id": "2",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 299,
@@ -193,7 +195,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76406197ac559e4089b82",
+        "id": "3",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 249,
@@ -205,7 +207,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f763d8197ac559e4089b7a",
+        "id": "4",
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
         "pricePerNight": 199,
@@ -217,7 +219,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f7647c197ac559e4089b96",
+        "id": "5",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 399,
@@ -229,7 +231,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76452197ac559e4089b8e",
+        "id": "6",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 299,
@@ -241,7 +243,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76406197ac559e4089b82",
+        "id": "7",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 249,
@@ -253,7 +255,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f763d8197ac559e4089b7a",
+        "id": "8",
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
         "pricePerNight": 199,
@@ -265,7 +267,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f7647c197ac559e4089b96",
+        "id": "9",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 399,
@@ -277,7 +279,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76452197ac559e4089b8e",
+        "id": "10",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 299,
@@ -289,7 +291,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76406197ac559e4089b82",
+        "id": "11",
         "hotel": hotelDummyData,
         "roomType": "Double Bed",
         "pricePerNight": 249,
@@ -301,7 +303,7 @@ export const roomsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f763d8197ac559e4089b7a",
+        "id": "12",
         "hotel": hotelDummyData,
         "roomType": "Single Bed",
         "pricePerNight": 199,
@@ -321,7 +323,7 @@ export const roomsDummyData = [
 // User Bookings Dummy Data
 export const userBookingsDummyData = [
     {
-        "_id": "67f76839994a731e97d3b8ce",
+        "id": "1",
         "user": userDummyData,
         "room": roomsDummyData[1],
         "hotel": hotelDummyData,
@@ -337,7 +339,7 @@ export const userBookingsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76829994a731e97d3b8c3",
+        "id": "2",
         "user": userDummyData,
         "room": roomsDummyData[0],
         "hotel": hotelDummyData,
@@ -353,7 +355,7 @@ export const userBookingsDummyData = [
         "__v": 0
     },
     {
-        "_id": "67f76810994a731e97d3b8b4",
+        "id": "4",
         "user": userDummyData,
         "room": roomsDummyData[3],
         "hotel": hotelDummyData,
