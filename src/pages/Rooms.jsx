@@ -133,12 +133,12 @@ const Rooms = () => {
         </div>
         {filteredRooms.map((room) => (
           <div
-            key={room._id}
+            key={room.id}
             className="flex flex-col md:flex-row items-start gap-6 py-10 border-b border-gray-300 last:pb-30 last:border-0"
           >
             <img
               onClick={() => {
-                navigate(`/hotels/${room._id}`);
+                navigate(`/hotels/${room.id}`);
                 scrollTo(0, 0);
               }}
               src={room.images[0]}

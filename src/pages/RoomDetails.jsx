@@ -14,7 +14,7 @@ const RoomDetails = () => {
   const [mainImage, setMainImage] = useState(null);
 
   useEffect(() => {
-    const room = roomsDummyData.find((room) => room._id === id);
+    const room = roomsDummyData.find((room) => room.id === id);
     room && setRoom(room);
     room && setMainImage(room.images[0]);
   }, [id]);
@@ -133,9 +133,9 @@ const RoomDetails = () => {
           </button>
         </form>
 
-        <div className="mt-25 space-y-4">
+        <div className="mt-25 flex items-center gap-4 px-4 py-6">
           {roomCommonData.map((spec, index) => (
-            <div key={index} className="flex items-start gap-2">
+            <div key={index} className="bg-gray-100 flex items-start gap-2 border border-gray-300 p-4 rounded-lg">
               <img
                 src={spec.icon}
                 alt={`${spec.title}-icon`}
@@ -149,7 +149,7 @@ const RoomDetails = () => {
           ))}
         </div>
 
-        <div className="max-w-3xl border-y border-gray-300 py-10 text-gray-500">
+        <div className="  py-10 text-gray-500">
           <p>
             Get ready to immerse yourself in a world of unparalleled luxury and
             comfort at our exquisite hotel. From the moment you step into our
@@ -166,25 +166,6 @@ const RoomDetails = () => {
           </p>
         </div>
 
-        <div className="flex flex-col items-start gap-4 py-10">
-          <div className="flex gap-4">
-            <img
-              src={room.hotel.owner.image}
-              alt="hotel-owner"
-              className="w-14 h-14 md:h-18 md:w-18 rounded-full"
-            />
-            <div className="flex flex-col">
-              <p className="text-lg md:text-xl">{room.hotel.owner.username}</p>
-              <div className="flex items-center mt-1">
-                <Rating />
-                <p className="ml-2">200+ Reviews</p>
-              </div>
-            </div>
-          </div>
-          <button className="bg-primary text-white rounded-md py-2 px-4 hover:bg-primary-dull active:scale-95 transition-all">
-            Contact Owner
-          </button>
-        </div>
       </div>
     )
   );
